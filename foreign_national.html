@@ -124,7 +124,8 @@
              l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), 
              h="//www.htmlcommentbox.com";
          s.setAttribute("type","text/javascript");
-   <!--      s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1480510661438"); -->
+   <!-- The line below loads comments and the comment box  -->
+         s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1480510661438");
          if (typeof s!="undefined") 
              document.getElementsByTagName("head")[0].appendChild(s);
      })(); 
